@@ -95,9 +95,3 @@ s = "Python syntax highlighting"
 print s
 No language indicated, so no syntax highlighting in Markdown Here (varies on Github). 
 But let's throw in a <b>tag</b>.
-
-
-In the words of Abraham Lincoln:
-
-> Pardon my French
-
