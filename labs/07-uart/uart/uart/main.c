@@ -96,7 +96,7 @@ ISR(TIMER1_OVF_vect)
  */
 ISR(ADC_vect)
 {
-    // WRITE YOUR CODE HERE
+    
 	uint16_t value = 0;
 	char lcd_string[4] = "0000";
 	
