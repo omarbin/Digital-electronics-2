@@ -125,7 +125,7 @@ void GPIO_config_input_pullup(volatile uint8_t *reg_name, uint8_t pin_num)
 void GPIO_write_low(volatile uint8_t *reg_name, uint8_t pin_num)
 {
   bc:	fc 01       	movw	r30, r24
-	*reg_name = *reg_name & ~(1<<pin_num);
+	*reg_name = *reg_name & ~(1<<pin_num); //clear bit (and not)
   be:	90 81       	ld	r25, Z
   c0:	21 e0       	ldi	r18, 0x01	; 1
   c2:	30 e0       	ldi	r19, 0x00	; 0
@@ -228,7 +228,7 @@ int main(void)
  134:	87 e2       	ldi	r24, 0x27	; 39
  136:	90 e0       	ldi	r25, 0x00	; 0
  138:	0e 94 40 00 	call	0x80	; 0x80 <GPIO_config_output>
-	    GPIO_write_high(&PORTC, LED_RED);      
+	    GPIO_write_high(&PORTC, LED_RED);      //LED off (active low)
  13c:	60 e0       	ldi	r22, 0x00	; 0
  13e:	88 e2       	ldi	r24, 0x28	; 40
  140:	90 e0       	ldi	r25, 0x00	; 0
@@ -274,7 +274,7 @@ int main(void)
  172:	85 e2       	ldi	r24, 0x25	; 37
  174:	90 e0       	ldi	r25, 0x00	; 0
  176:	0e 94 77 00 	call	0xee	; 0xee <GPIO_toggle>
-		       GPIO_toggle(&PORTC, LED_RED);
+		    GPIO_toggle(&PORTC, LED_RED);
  17a:	60 e0       	ldi	r22, 0x00	; 0
  17c:	88 e2       	ldi	r24, 0x28	; 40
  17e:	90 e0       	ldi	r25, 0x00	; 0

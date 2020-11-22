@@ -8,7 +8,7 @@ Omar Bin Rahman, BUT
 #define LED_YELLOW  PC3     // AVR pin where yellow LED is connected
 #define LED_ORANGE  PC4     // AVR pin where orange LED is connected
 #define BTN         PD0     // AVR pin where push button is connected
-#define BLINK_DELAY 500     // delay in ms
+#define BLINK_DELAY 200    // delay in ms
 #ifndef F_CPU
 #define F_CPU 16000000      // CPU frequency in Hz required for delay
 #endif
@@ -33,10 +33,10 @@ int main(void)
     /* RED, BLUE, YELLOW, ORANGE LED */
     // WRITE YOUR CODE HERE
 	    DDRC = DDRC | (1<<LED_RED) | (1<<LED_BLUE) | (1<<LED_YELLOW) | (1<<LED_ORANGE); 
-	    PORTC = PORTC & ~(1<<LED_RED); // Turn OFF
-	    PORTC = PORTC & ~(1<<LED_BLUE); // Turn OFF
-	    PORTC = PORTC & ~(1<<LED_YELLOW); // Turn OFF
-	    PORTC = PORTC & ~(1<<LED_ORANGE); // Turn OFF
+	    PORTC = PORTC | (1<<LED_RED); // Turn OFF
+	    PORTC = PORTC | (1<<LED_BLUE); // Turn OFF
+	    PORTC = PORTC | (1<<LED_YELLOW); // Turn OFF
+	    PORTC = PORTC | (1<<LED_ORANGE); // Turn OFF
 
 /* PUSH BUTTON */ 
         DDRD = DDRD & ~(1<<BTN); //input 
@@ -48,38 +48,38 @@ int main(void)
         _delay_ms(BLINK_DELAY);
 
         // WRITE YOUR CODE HERE
-		if (bit_is_clear(PIND, BTN)) //set instead of clear
+		if (bit_is_set(PIND, BTN)) //set instead of clear
 		{
-			PORTB = PORTB | (1<<LED_GREEN); // TURN ON
+			PORTB = PORTB ^ (1<<LED_GREEN); // TURN ON
 			_delay_ms(BLINK_DELAY);
 			PORTB = PORTB & ~(1<<LED_GREEN); // TURN OFF
 			
-			PORTC = PORTC | (1<<LED_RED);    // TURN ON
+			PORTC = PORTC ^ (1<<LED_RED);    // TURN ON
 			_delay_ms(BLINK_DELAY);
-			PORTC = PORTC & ~(1<<LED_RED);   // TURN OFF
+			PORTC = PORTC | (1<<LED_RED);   // TURN OFF
 			
-			PORTC = PORTC | (1<<LED_BLUE);   // TURN ON
+			PORTC = PORTC ^ (1<<LED_BLUE);   // TURN ON
 			_delay_ms(BLINK_DELAY);
-			PORTC = PORTC & ~(1<<LED_BLUE);   // TURN OFF
+			PORTC = PORTC | (1<<LED_BLUE);   // TURN OFF
 			
-			PORTC = PORTC | (1<<LED_YELLOW);   // TURN ON
+			PORTC = PORTC ^ (1<<LED_YELLOW);   // TURN ON
 			_delay_ms(BLINK_DELAY);
-			PORTC = PORTC & ~(1<<LED_YELLOW);   // TURN OFF
+			PORTC = PORTC | (1<<LED_YELLOW);   // TURN OFF
 			
-			PORTC = PORTC | (1<<LED_ORANGE);   // TURN ON
+			PORTC = PORTC ^ (1<<LED_ORANGE);   // TURN ON
 			_delay_ms(BLINK_DELAY);
-			PORTC = PORTC & ~(1<<LED_ORANGE);   // TURN OFF
+			PORTC = PORTC | (1<<LED_ORANGE);   // TURN OFF
 			
 			//now starts to go backwards
-			PORTC = PORTC | (1<<LED_YELLOW);   // TURN ON
+			PORTC = PORTC ^ (1<<LED_YELLOW);   // TURN ON
 			_delay_ms(BLINK_DELAY);
-			PORTC = PORTC & ~(1<<LED_YELLOW);   // TURN OFF
-			PORTC = PORTC | (1<<LED_BLUE);   // TURN ON
+			PORTC = PORTC | (1<<LED_YELLOW);   // TURN OFF
+			PORTC = PORTC ^ (1<<LED_BLUE);   // TURN ON
 			_delay_ms(BLINK_DELAY);
-			PORTC = PORTC & ~(1<<LED_BLUE);   // TURN OFF
-			PORTC = PORTC | (1<<LED_RED);    // TURN ON
+			PORTC = PORTC | (1<<LED_BLUE);   // TURN OFF
+			PORTC = PORTC ^ (1<<LED_RED);    // TURN ON
 			_delay_ms(BLINK_DELAY);
-			PORTC = PORTC & ~(1<<LED_RED);   // TURN OFF
+			PORTC = PORTC | (1<<LED_RED);   // TURN OFF
 		}
 
     }

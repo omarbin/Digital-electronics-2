@@ -39,7 +39,7 @@ int main(void)
     // WRITE YOUR CODE HERE
 
 	    DDRC = DDRC | (1<<LED_RED); //output
-	    PORTC = PORTC | (1<<LED_RED); //Turn off
+	    PORTC = PORTC | (1<<LED_RED); //Turn off  with high value as active low
 /* PUSH BUTTON */ 
         DDRD = DDRD & ~(1<<BTN); //input 
 		PORTD = PORTD | (1<<BTN); //enable internal pull-up
@@ -50,7 +50,7 @@ int main(void)
         _delay_ms(BLINK_DELAY);
 
         // WRITE YOUR CODE HERE
-		if (bit_is_clear(PIND, BTN)) //set instead of clear
+		if (bit_is_set(PIND, BTN)) //set instead of clear
 		{
 				PORTB = PORTB ^ (1<<LED_GREEN); //invert
 				PORTC= PORTC ^ (1<<LED_RED);   //invert

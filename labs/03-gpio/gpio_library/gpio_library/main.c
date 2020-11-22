@@ -27,7 +27,7 @@ int main(void)
     /* second LED */
     // WRITE YOUR CODE HERE
 	    GPIO_config_output(&DDRC, LED_RED);
-	    GPIO_write_high(&PORTC, LED_RED);      
+	    GPIO_write_high(&PORTC, LED_RED);      //LED off (active low)
 
     /* push button */
     // WRITE YOUR CODE HERE
@@ -43,7 +43,7 @@ int main(void)
 		if (GPIO_read(&PIND, BTN)==1) 
 		{
 			GPIO_toggle(&PORTB, LED_GREEN);
-		       GPIO_toggle(&PORTC, LED_RED);
+		    GPIO_toggle(&PORTC, LED_RED);
 		}
 
     }
