@@ -10,9 +10,9 @@ Current project it has been designed as final project of the subject **Digital E
 
 The main purpose of the project is program security software for door lock system based on Arduino.
 
-System counts with 4 possible passwords made for 4 digits which allow the user open the door.
+System counts with 4 possible passwords made of 4 digits which allows the user to open the door.
 
-Initially, the system's door will stay closed. The user will have to enter her/his personal password in order to open it (as it has been said, there are only 4 possible combinations). If the user enters **correct password**, the door will open and the user can access to the hall. If on the contrary, the user enters **wrong password**, he/she will have another 2 opportunities (in total 3) to unlock the door. Just in case the user introduces wrong password 3 times in a row, the system will be locked and the access will be forbidden.
+Initially, the system's door will stay closed. The user will have to enter her/his personal password in order to open it (as it has been said, there are only 4 possible combinations). If the user enters **correct password**, the door will open and the user can get access to the hall. If on the contrary, the user enters **wrong password**, he/she will have 2 more opportunities (in total 3) to unlock the door. Just in case the user introduces wrong password 3 times in a row, the system will be locked for 5 seconds and the access will be forbidden.
 
 On the other hand, at the moment the user enters first digit of the password, he/she will have **5 seconds** to complete the rest of the password, otherwise, he/she will have to enter again the code.
 
@@ -20,7 +20,7 @@ All the process is divided in several states:
 
 1. **START**
 
-This is the initial state. Door will be close (relay), state LEDs will be off, speaker will be mute and there will display welcome message on LCD screen.
+This is the initial state. Door will be close (relay), state LEDs will be off, speaker will be mute and welcome message on LCD screen will be displayed.
 
 2. **Intermediate state**
 
@@ -32,15 +32,15 @@ There will be 3 possibilities:
 
 - 3.1 **Counter key < 5" AND correct key**
 
-If the user enters correct password in a period less than 5 seconds since he/she entered first digit, door will be open (relay), green LED will be on, speaker will play simple buzz and there will display identification message on LCD screen for 5 seconds.
+If the user enters correct password in a period less than 5 seconds since he/she entered first digit, door will be open (relay), green LED will be on, speaker will play simple buzz and the corresponding user's name will be displayed as an identification message on LCD screen for 5 seconds. 
 
 - 3.2 **Counter key > 5" OR incorrect key**
 
-If the user enters incorrect password or he/she spent more than 5 seconds since first digit was introduced, door will remain closed (relay), red LED will be on, speaker will be mute and there will display warning message on LCD screen for 5 seconds.
+If the user enters incorrect password or he/she spent more than 5 seconds since first digit was introduced, door will remain closed (relay), red LED will be on, speaker will be mute and warning message on LCD screen for 5 seconds will be displayed.
 
 - 3.3 **Incorrect password for 3 times**
 
-If the user enters incorrect password 3  times in a row, door will remain closed (relay), red LED will blink, speaker will be play simple buzz each 1 second and there will display warning message on LCD screen for 5 seconds.
+If the user enters incorrect password 3  times in a row, door will remain closed (relay), red LED will blink, speaker will be play simple buzz every 1 second for 5 seconds and warning message on LCD screen will also be displayed for 5 seconds.
 
 After final state (any of its variants), system will return to START state.
 
