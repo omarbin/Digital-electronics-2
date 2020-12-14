@@ -90,7 +90,7 @@ In the following lines it will be explain different functions of this modules an
 
 - **LCD screen**
 
-    This module is similar to the LCD screen we have used for the semester by using [*lcd_definitions.h*]()(https://github.com/omarbin/Digital-electronics-2/blob/master/labs/Final_Project_DE2/Final_Project/Final_Project/lcd_definitions.h) and Peter Flurry's libraries: [*lcd.h*](https://github.com/omarbin/Digital-electronics-2/blob/master/labs/Final_Project_DE2/Final_Project/Final_Project/lcd.h) [*lcd.c*](https://github.com/omarbin/Digital-electronics-2/blob/master/labs/Final_Project_DE2/Final_Project/Final_Project/lcd.c) 
+    This module is similar to the LCD screen we have used for the semester by using [*lcd_definitions.h*](https://github.com/omarbin/Digital-electronics-2/blob/master/labs/Final_Project_DE2/Final_Project/Final_Project/lcd_definitions.h) and Peter Flurry's libraries: [*lcd.h*](https://github.com/omarbin/Digital-electronics-2/blob/master/labs/Final_Project_DE2/Final_Project/Final_Project/lcd.h) [*lcd.c*](https://github.com/omarbin/Digital-electronics-2/blob/master/labs/Final_Project_DE2/Final_Project/Final_Project/lcd.c) 
 
     You can find the explanations on ['*Mr.Fryza's GitHub*'](https://github.com/tomas-fryza/Digital-electronics-2/tree/master/Labs/06-lcd).
 
