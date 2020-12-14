@@ -80,7 +80,7 @@ In the following lines it will be explain different functions of this modules an
 
     One of the others hardware modules we have introduced on this topic is the **speaker**. Its purpose is plays simple buzz when the user enter the password.
     
-    The way we have to get the sound is setting the pin of the speaker as an output and sending high level to play the buzz. 
+    The way we have to get the sound is setting the pin of the speaker as an output and sending high level to play the buzz using ['*gpio.h*'](https://github.com/omarbin/Digital-electronics-2/blob/master/labs/Final_Project_DE2/Final_Project/Final_Project/gpio.h) and ['*gpio.c*'](https://github.com/omarbin/Digital-electronics-2/blob/master/labs/Final_Project_DE2/Final_Project/Final_Project/gpio.c) libraries.   
 
 - **Relay**
 
@@ -90,15 +90,15 @@ In the following lines it will be explain different functions of this modules an
 
 - **LCD screen**
 
-    This module is similar to the LCD screen we have used for the semester. 
+    This module is similar to the LCD screen we have used for the semester.  
 
-    You can find the explanations on ['*Mr.Fryza GitHub*'](https://github.com/tomas-fryza/Digital-electronics-2/tree/master/Labs/06-lcd).
+    You can find the explanations on ['*Mr.Fryza's GitHub*'](https://github.com/tomas-fryza/Digital-electronics-2/tree/master/Labs/06-lcd).
 
 - **LEDs**
 
     This module is similar to the LEDs we have used for the semester. 
 
-    You can find the explanations on ['*Mr.Fryza GitHub*'](https://github.com/tomas-fryza/Digital-electronics-2/tree/master/Labs/02-leds).
+    You can find the explanations on ['*Mr.Fryza's GitHub*'](https://github.com/tomas-fryza/Digital-electronics-2/tree/master/Labs/02-leds).
 
 ## Code description and simulations
 Write your text here.
