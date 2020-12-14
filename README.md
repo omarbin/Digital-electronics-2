@@ -90,7 +90,7 @@ In the following lines it will be explain different functions of this modules an
 
 - **LCD screen**
 
-    This module is similar to the LCD screen we have used for the semester by using [*lcd_definitions.h*](https://github.com/omarbin/Digital-electronics-2/blob/master/labs/Final_Project_DE2/Final_Project/Final_Project/lcd_definitions.h) and Peter Flurry's libraries: [*lcd.h*](https://github.com/omarbin/Digital-electronics-2/blob/master/labs/Final_Project_DE2/Final_Project/Final_Project/lcd.h) and [*lcd.c*](https://github.com/omarbin/Digital-electronics-2/blob/master/labs/Final_Project_DE2/Final_Project/Final_Project/lcd.c) 
+    This module is similar to the LCD screen we have used for the semester by using [*lcd_definitions.h*](https://github.com/omarbin/Digital-electronics-2/blob/master/labs/Final_Project_DE2/Final_Project/Final_Project/lcd_definitions.h) and Peter Fleury's libraries: [*lcd.h*](https://github.com/omarbin/Digital-electronics-2/blob/master/labs/Final_Project_DE2/Final_Project/Final_Project/lcd.h) and [*lcd.c*](https://github.com/omarbin/Digital-electronics-2/blob/master/labs/Final_Project_DE2/Final_Project/Final_Project/lcd.c) 
 
     You can find the explanations on ['*Mr.Fryza's GitHub*'](https://github.com/tomas-fryza/Digital-electronics-2/tree/master/Labs/06-lcd).
 
@@ -99,6 +99,11 @@ In the following lines it will be explain different functions of this modules an
     This module is similar to the LEDs we have used for the semester. 
 
     You can find the explanations on ['*Mr.Fryza's GitHub*'](https://github.com/tomas-fryza/Digital-electronics-2/tree/master/Labs/02-leds).
+    
+    **Main.c**
+    
+    We also user [*timer.h*](https://github.com/omarbin/Digital-electronics-2/blob/master/labs/Final_Project_DE2/Final_Project/Final_Project/timer.h) library to work with delays in the system. You can find our [*main.c*](https://github.com/omarbin/Digital-electronics-2/blob/master/labs/Final_Project_DE2/Final_Project/Final_Project/main.c) here. 
+   To send useful status information to uart we used Peter Fleury's librarires: [*uart.h*](https://github.com/omarbin/Digital-electronics-2/blob/master/labs/Final_Project_DE2/Final_Project/Final_Project/uart.h) and [*uart.c*](https://github.com/omarbin/Digital-electronics-2/blob/master/labs/Final_Project_DE2/Final_Project/Final_Project/uart.c) 
 
 ## Code description and simulations
 Write your text here.
