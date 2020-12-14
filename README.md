@@ -106,10 +106,9 @@ In the following lines it will be explain different functions of this modules an
    To send useful status information to uart we used Peter Fleury's librarires: [*uart.h*](https://github.com/omarbin/Digital-electronics-2/blob/master/labs/Final_Project_DE2/Final_Project/Final_Project/uart.h) and [*uart.c*](https://github.com/omarbin/Digital-electronics-2/blob/master/labs/Final_Project_DE2/Final_Project/Final_Project/uart.c) 
 
 ## Code description and simulations
-Write your text here.
 
 ## Video/Animation
-You can find personal video where all the previous features of the system described ['*on this link*'](https://www.youtube.com/watch?v=GhaDPUAOq3g&feature=youtu.be).
+You can find personal video where all the previous features of the system described ['*on this link*'](https://www.youtube.com/watch?v=qahc68WCkCg&feature=youtu.be).
 
 ## References
 1. ['*How keypad works*'](https://arduinogetstarted.com/tutorials/arduino-keypad).
@@ -117,4 +116,6 @@ You can find personal video where all the previous features of the system descri
 2. ['*How speaker works*'](https://shallowsky.com/arduino/class/buzzer.html#:~:text=A%20%22piezo%20buzzer%22%20is%20basically,the%20crystal%20can%20make%20sound.).
 
 3. ['*How relays works*'](https://maker.pro/arduino/projects/driving-a-relay-with-an-arduino#:~:text=*%20A%20relay%20basically%20allows%20a,off%20a%20higher%20power%20circuit).
+
+4. 
 
