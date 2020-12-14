@@ -117,5 +117,3 @@ You can find personal video where all the previous features of the system descri
 
 3. ['*How relays works*'](https://maker.pro/arduino/projects/driving-a-relay-with-an-arduino#:~:text=*%20A%20relay%20basically%20allows%20a,off%20a%20higher%20power%20circuit).
 
-4. 
-
