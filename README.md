@@ -174,6 +174,8 @@ We also created one library for keypad: `keypad.h` and `keypad.c`
 
 On **keypad.h**, pins and functions prototypes have been described. You can find the code [*keypad.h*](https://github.com/GuicoRM/Final-Project-DE2/blob/main/Final_Project_DE2/Final_Project/Final_Project/keypad.h).
 
+You can find the code of [*keypad.c*](https://github.com/GuicoRM/Final-Project-DE2/blob/main/Final_Project_DE2/Final_Project/Final_Project/keypad.c).
+
 On **keypad.c**, there are 2 functions:
 
 - **void keypad_setup_pin(void)**: this function will be used to set different ROWS and COLUMNS of the keypad:
@@ -340,7 +342,6 @@ uint8_t keypad_scan(void)
 	return key;							        // Return the value of the key which is pushed
 }
 ```
-You can find the code of [*keypad.c*](https://github.com/GuicoRM/Final-Project-DE2/blob/main/Final_Project_DE2/Final_Project/Final_Project/keypad.c).
 
 ## Video/Animation
 You can find personal video where all the previous features of the system described [*on this link*](https://www.youtube.com/watch?v=qahc68WCkCg&feature=youtu.be).
