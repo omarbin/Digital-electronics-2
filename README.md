@@ -160,7 +160,7 @@ We divided `main.c` in 3 different parts:
     The door will be closed, speaker will play a sound every second and LED RED will blink also every second.
     After 5 seconds, this ISR will be disabled and first ISR will be enabled again.
 
-You can find complete description on [*main.c*](https://github.com/GuicoRM/Final-Project-DE2/blob/main/Final_Project_DE2/Final_Project/Final_Project/main.c).
+You can find complete description on [*main.c*](https://github.com/omarbin/Digital-electronics-2/blob/master/labs/Final_Project_DE2/Final_Project/Final_Project/main.c).
 
 ### libraries
 We used several libraries of previous laboratories such as:
@@ -172,9 +172,9 @@ We used several libraries of previous laboratories such as:
 
 We also created one library for keypad: `keypad.h` and `keypad.c`
 
-On **keypad.h**, pins and functions prototypes have been described. You can find the code [*keypad.h*](https://github.com/GuicoRM/Final-Project-DE2/blob/main/Final_Project_DE2/Final_Project/Final_Project/keypad.h).
+On **keypad.h**, pins and functions prototypes have been described. You can find the code [*keypad.h*](https://github.com/omarbin/Digital-electronics-2/blob/master/labs/Final_Project_DE2/Final_Project/Final_Project/keypad.h).
 
-You can find the code of [*keypad.c*](https://github.com/GuicoRM/Final-Project-DE2/blob/main/Final_Project_DE2/Final_Project/Final_Project/keypad.c).
+You can find the code of [*keypad.c*](https://github.com/omarbin/Digital-electronics-2/blob/master/labs/Final_Project_DE2/Final_Project/Final_Project/keypad.c).
 
 On **keypad.c**, there are 2 functions:
 
